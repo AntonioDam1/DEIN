@@ -1,0 +1,4 @@
+C:\Users\Administrador_INF\source\repos\Ejercicio2_AntonioAguilera\Ejercicio2_AntonioAguilera\obj\Release\net6.0-windows\MainWindow.g.cs
+C:\Users\Administrador_INF\source\repos\Ejercicio2_AntonioAguilera\Ejercicio2_AntonioAguilera\obj\Release\net6.0-windows\App.g.cs
+C:\Users\Administrador_INF\source\repos\Ejercicio2_AntonioAguilera\Ejercicio2_AntonioAguilera\obj\Release\net6.0-windows\Ejercicio2_AntonioAguilera_MarkupCompile.cache
+C:\Users\Administrador_INF\source\repos\Ejercicio2_AntonioAguilera\Ejercicio2_AntonioAguilera\obj\Release\net6.0-windows\Ejercicio2_AntonioAguilera_MarkupCompile.lref
