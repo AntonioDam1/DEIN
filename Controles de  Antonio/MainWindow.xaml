@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Controles_de__Antonio"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Diseño de controles" Height="450" Width="800">
     <Grid>
-        
+        <Grid>
+            <TextBox AcceptsReturn="False" TextWrapping="Wrap" SpellCheck.IsEnabled="True" Language="en-US" Margin="184,82,156,100" />
+        </Grid>
     </Grid>
 </Window>

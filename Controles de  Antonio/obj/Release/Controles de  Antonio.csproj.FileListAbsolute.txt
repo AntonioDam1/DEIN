@@ -1,0 +1,15 @@
+C:\Users\alumTA\source\DEIN\Controles de  Antonio\bin\Release\Controles de  Antonio.exe.config
+C:\Users\alumTA\source\DEIN\Controles de  Antonio\bin\Release\Controles de  Antonio.exe
+C:\Users\alumTA\source\DEIN\Controles de  Antonio\bin\Release\Controles de  Antonio.pdb
+C:\Users\alumTA\source\DEIN\Controles de  Antonio\obj\Release\Controles de  Antonio.csproj.AssemblyReference.cache
+C:\Users\alumTA\source\DEIN\Controles de  Antonio\obj\Release\MainWindow.g.cs
+C:\Users\alumTA\source\DEIN\Controles de  Antonio\obj\Release\App.g.cs
+C:\Users\alumTA\source\DEIN\Controles de  Antonio\obj\Release\Controles de  Antonio_MarkupCompile.cache
+C:\Users\alumTA\source\DEIN\Controles de  Antonio\obj\Release\Controles de  Antonio_MarkupCompile.lref
+C:\Users\alumTA\source\DEIN\Controles de  Antonio\obj\Release\MainWindow.baml
+C:\Users\alumTA\source\DEIN\Controles de  Antonio\obj\Release\Controles de  Antonio.g.resources
+C:\Users\alumTA\source\DEIN\Controles de  Antonio\obj\Release\Controles_de__Antonio.Properties.Resources.resources
+C:\Users\alumTA\source\DEIN\Controles de  Antonio\obj\Release\Controles de  Antonio.csproj.GenerateResource.cache
+C:\Users\alumTA\source\DEIN\Controles de  Antonio\obj\Release\Controles de  Antonio.csproj.CoreCompileInputs.cache
+C:\Users\alumTA\source\DEIN\Controles de  Antonio\obj\Release\Controles de  Antonio.exe
+C:\Users\alumTA\source\DEIN\Controles de  Antonio\obj\Release\Controles de  Antonio.pdb

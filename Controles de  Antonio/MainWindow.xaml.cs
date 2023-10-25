@@ -24,5 +24,10 @@ namespace Controles_de__Antonio
         {
             InitializeComponent();
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
