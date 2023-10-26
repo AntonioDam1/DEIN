@@ -94,5 +94,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\dg43mzo-a17eee10-0e90-4b4a-b309-e56d9491f5ba.png" />
+    <Resource Include="Imagenes\fifa_19___icon_by_blagoicons_dce2z9b-fullview.png" />
+    <Resource Include="Imagenes\Zelda_Logo.svg.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
