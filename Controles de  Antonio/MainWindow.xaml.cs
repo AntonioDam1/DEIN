@@ -12,7 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
 namespace Controles_de__Antonio
 {
     /// <summary>
@@ -20,14 +19,24 @@ namespace Controles_de__Antonio
     /// </summary>
     public partial class MainWindow : Window
     {
+        public class Asignatura
+        {
+            public string AsignaturaNombre { get; set; }
+            public SolidColorBrush Color { get; set; }
+            public double Progreso { get; set; }
+        }
+
+        public List<Asignatura> Asignaturas { get; set; } = new List<Asignatura>
+        {
+            new Asignatura { AsignaturaNombre = "Desarrollo de interfaces",Color = Brushes.Green, Progreso = 80 },
+            new Asignatura { AsignaturaNombre = "Programacion Multimedia Dispositivos moviles", Color = Brushes.Green, Progreso = 90 },
+            new Asignatura { AsignaturaNombre = "Sistema de gestion empresarial", Color = Brushes.Red,Progreso = 30},
+        };
+
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
+            DataContext = this;
         }
     }
 }

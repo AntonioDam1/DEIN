@@ -13,3 +13,18 @@ C:\Users\alumTA\source\DEIN\Controles de  Antonio\obj\Release\Controles de  Anto
 C:\Users\alumTA\source\DEIN\Controles de  Antonio\obj\Release\Controles de  Antonio.csproj.CoreCompileInputs.cache
 C:\Users\alumTA\source\DEIN\Controles de  Antonio\obj\Release\Controles de  Antonio.exe
 C:\Users\alumTA\source\DEIN\Controles de  Antonio\obj\Release\Controles de  Antonio.pdb
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Controles de  Antonio\bin\Release\Controles de  Antonio.exe.config
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Controles de  Antonio\bin\Release\Controles de  Antonio.exe
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Controles de  Antonio\bin\Release\Controles de  Antonio.pdb
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Controles de  Antonio\obj\Release\Controles de  Antonio.csproj.AssemblyReference.cache
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Controles de  Antonio\obj\Release\MainWindow.g.cs
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Controles de  Antonio\obj\Release\App.g.cs
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Controles de  Antonio\obj\Release\Controles de  Antonio_MarkupCompile.cache
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Controles de  Antonio\obj\Release\Controles de  Antonio_MarkupCompile.lref
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Controles de  Antonio\obj\Release\MainWindow.baml
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Controles de  Antonio\obj\Release\Controles de  Antonio.g.resources
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Controles de  Antonio\obj\Release\Controles_de__Antonio.Properties.Resources.resources
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Controles de  Antonio\obj\Release\Controles de  Antonio.csproj.GenerateResource.cache
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Controles de  Antonio\obj\Release\Controles de  Antonio.csproj.CoreCompileInputs.cache
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Controles de  Antonio\obj\Release\Controles de  Antonio.exe
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Controles de  Antonio\obj\Release\Controles de  Antonio.pdb

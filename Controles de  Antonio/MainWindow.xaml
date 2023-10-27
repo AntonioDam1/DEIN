@@ -6,12 +6,14 @@
         xmlns:local="clr-namespace:Controles_de__Antonio"
         mc:Ignorable="d"
         Title="Diseño de controles" Height="450" Width="800">
-    <Grid>
-        <Grid>
-            <TextBox AcceptsReturn="False" TextWrapping="Wrap" SpellCheck.IsEnabled="True" Margin="194,96,146,100" RenderTransformOrigin="0.509,0.972" />
-        </Grid>
-        <StackPanel Margin="10">
-            <ComboBox>
+    <Grid Background="Beige" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <ComboBox Height="42">
                 <ComboBoxItem IsSelected="True">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/Imagenes/dg43mzo-a17eee10-0e90-4b4a-b309-e56d9491f5ba.png" Width="50" Height="30"/>
@@ -32,5 +34,16 @@
                 </ComboBoxItem>
             </ComboBox>
         </StackPanel>
+        <TextBox Grid.Row="1" Margin="55,40,50,35" AcceptsReturn="True" TextWrapping="Wrap" SpellCheck.IsEnabled="True" VerticalScrollBarVisibility="Auto" />
+        <ListBox Grid.Row="2" ItemsSource="{Binding Asignaturas}" d:ItemsSource="{d:SampleData ItemCount=3}" Margin="0,10,0,10">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding AsignaturaNombre}" Foreground="{Binding Color}" />
+                        <ProgressBar Value="{Binding Progreso}" Width="193" Height="20" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Window>
