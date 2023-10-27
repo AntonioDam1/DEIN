@@ -1,0 +1,26 @@
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\obj\Release\net6.0-windows\MainWindow.g.cs
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\obj\Release\net6.0-windows\Page1.g.cs
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\obj\Release\net6.0-windows\Window1.g.cs
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\obj\Release\net6.0-windows\Window2.g.cs
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\obj\Release\net6.0-windows\App.g.cs
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\obj\Release\net6.0-windows\Navegación de  Antonio_MarkupCompile.cache
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\obj\Release\net6.0-windows\Navegación de  Antonio_MarkupCompile.lref
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\bin\Release\net6.0-windows\Navegación de  Antonio.exe
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\bin\Release\net6.0-windows\Navegación de  Antonio.deps.json
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\bin\Release\net6.0-windows\Navegación de  Antonio.runtimeconfig.json
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\bin\Release\net6.0-windows\Navegación de  Antonio.dll
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\bin\Release\net6.0-windows\Navegación de  Antonio.pdb
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\obj\Release\net6.0-windows\MainWindow.baml
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\obj\Release\net6.0-windows\Page1.baml
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\obj\Release\net6.0-windows\Window1.baml
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\obj\Release\net6.0-windows\Window2.baml
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\obj\Release\net6.0-windows\Navegación de  Antonio.g.resources
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\obj\Release\net6.0-windows\Navegación de  Antonio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\obj\Release\net6.0-windows\Navegación de  Antonio.AssemblyInfoInputs.cache
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\obj\Release\net6.0-windows\Navegación de  Antonio.AssemblyInfo.cs
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\obj\Release\net6.0-windows\Navegación de  Antonio.csproj.CoreCompileInputs.cache
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\obj\Release\net6.0-windows\Navegación de  Antonio.dll
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\obj\Release\net6.0-windows\refint\Navegación de  Antonio.dll
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\obj\Release\net6.0-windows\Navegación de  Antonio.pdb
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\obj\Release\net6.0-windows\Navegación de  Antonio.genruntimeconfig.cache
+C:\Users\Administrador_INF\OneDrive\Escritorio\DEIN\Navegación de  Antonio\Navegación de  Antonio\obj\Release\net6.0-windows\ref\Navegación de  Antonio.dll
