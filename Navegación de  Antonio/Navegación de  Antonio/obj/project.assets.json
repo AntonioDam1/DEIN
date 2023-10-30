@@ -8,26 +8,27 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Administrador_INF\\.nuget\\packages\\": {}
+    "C:\\Users\\Alberto\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrador_INF\\OneDrive\\Escritorio\\DEIN\\Navegación de  Antonio\\Navegación de  Antonio\\Navegación de  Antonio.csproj",
+      "projectUniqueName": "C:\\Users\\Alberto\\source\\DEIN-Alumnado\\Antonio\\DEIN\\Navegación de  Antonio\\Navegación de  Antonio\\Navegación de  Antonio.csproj",
       "projectName": "Navegación de  Antonio",
-      "projectPath": "C:\\Users\\Administrador_INF\\OneDrive\\Escritorio\\DEIN\\Navegación de  Antonio\\Navegación de  Antonio\\Navegación de  Antonio.csproj",
-      "packagesPath": "C:\\Users\\Administrador_INF\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrador_INF\\OneDrive\\Escritorio\\DEIN\\Navegación de  Antonio\\Navegación de  Antonio\\obj\\",
+      "projectPath": "C:\\Users\\Alberto\\source\\DEIN-Alumnado\\Antonio\\DEIN\\Navegación de  Antonio\\Navegación de  Antonio\\Navegación de  Antonio.csproj",
+      "packagesPath": "C:\\Users\\Alberto\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alberto\\source\\DEIN-Alumnado\\Antonio\\DEIN\\Navegación de  Antonio\\Navegación de  Antonio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Administrador_INF\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Alberto\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0-windows"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0-windows7.0": {
@@ -63,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
