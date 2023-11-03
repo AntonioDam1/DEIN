@@ -22,7 +22,7 @@
         <Style x:Key="ImagenLogo" TargetType="Image">
             <Setter Property="Source" Value="/Imagenes/gratis-png-futbolista-animacion-balon-futbol.png" />
             <Setter Property = "Width" Value = "77"/>
-            <Setter Property = "Height" Value = "29"/>
+            <Setter Property = "Height" Value = "50"/>
             <Setter Property = "VerticalAlignment" Value = "Top"/>
             <Setter Property = "Margin" Value = "4"/>
         </Style>
@@ -33,6 +33,6 @@
             <Setter Property="Width" Value="80"/>
             <Setter Property="VerticalAlignment" Value="Top"/>
             <Setter Property="Margin" Value="7"/>
-        </Style>    
+        </Style>
     </Application.Resources>
 </Application>

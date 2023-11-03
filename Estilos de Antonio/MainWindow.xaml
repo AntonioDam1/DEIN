@@ -10,6 +10,27 @@
         <StackPanel Style="{StaticResource AparienciaStackPanel}">
             <Image Style="{StaticResource ImagenLogo}"></Image>
             <Button Style="{StaticResource AparienciaBtnNavegacion}">Partidos</Button>
+            <Button Style="{StaticResource AparienciaBtnNavegacion}">Equipos</Button>
+            <Button Style="{StaticResource AparienciaBtnNavegacion}">Competicion</Button>
+            <Button x:Name="btnEstiloIndividual" Content = "Search" Margin="10,4,10,15" Height="Auto">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Background" Value="White"/>
+                        <Setter Property = "Width" Value = "150" />
+                        <Setter Property = "Height" Value = "20" />
+                        <Setter Property = "Margin" Value = "9" />
+                        <Setter Property= "Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="Button">
+                                    <Border CornerRadius="20" Background="{TemplateBinding Background}">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
         </StackPanel>
     </Grid>
 </Window>
