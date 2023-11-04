@@ -94,9 +94,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Imagenes\60993.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Imagenes\gratis-png-futbolista-animacion-balon-futbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\Settings-icon-symbol-vector.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

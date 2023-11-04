@@ -8,11 +8,11 @@
         Title="Estilos de Antonio" Height="450" Width="800">
     <Grid Style="{StaticResource AparienciaGrid}">
         <StackPanel Style="{StaticResource AparienciaStackPanel}">
-            <Image Style="{StaticResource ImagenLogo}"></Image>
+            <Image Style="{StaticResource ImagenLogo}" Height="Auto" Margin="4,4,4,10" VerticalAlignment="Stretch"></Image>
             <Button Style="{StaticResource AparienciaBtnNavegacion}">Partidos</Button>
             <Button Style="{StaticResource AparienciaBtnNavegacion}">Equipos</Button>
             <Button Style="{StaticResource AparienciaBtnNavegacion}">Competicion</Button>
-            <Button x:Name="btnEstiloIndividual" Content = "Search" Margin="10,4,10,15" Height="Auto">
+            <Button x:Name="btnEstiloIndividual" Content = "Search" Margin="10" Height="Auto" RenderTransformOrigin="0.5,1.148">
                 <Button.Resources>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Background" Value="White"/>
@@ -31,6 +31,9 @@
                     </Style>
                 </Button.Resources>
             </Button>
+            <Button Style="{StaticResource BarraDivisora}" ></Button>
+            <Image Style="{StaticResource BtnFavorite}"></Image>
+            <Image Style="{StaticResource BtnSetting}"></Image>
         </StackPanel>
     </Grid>
 </Window>
