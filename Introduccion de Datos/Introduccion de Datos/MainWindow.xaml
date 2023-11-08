@@ -26,8 +26,8 @@
         <TextBlock Text="Introduccion de Datos de Empleados" HorizontalAlignment="Center"></TextBlock>
         <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,15,0,7">
             <TextBlock Text="Nombre*" Width="50" Margin="4,0,0,0"></TextBlock>
-            <TextBox Width="300" Name="txtNombre" Margin="7,0,0,0"></TextBox>
-        </StackPanel>
+			<TextBox Width="300" x:Name="txtNombre" Margin="7,0,0,0" />
+		</StackPanel>
         <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,0,7">
             <TextBlock Text="Apellidos" Width="50" Margin="4,0,0,0"></TextBlock>
             <TextBox Width="300" Name="txtApellidos" Margin="7,0,0,0"></TextBox>
@@ -55,11 +55,11 @@
         <StackPanel Grid.Row="8" Orientation="Horizontal" Margin="0,0,0,7">
             <TextBlock Text="Domicilio" Width="112" Margin="4,0,0,0"></TextBlock>
             <StackPanel Orientation="Vertical">
-                <TextBox Width="300" Margin="5,0,0,5" Text="Direccion"></TextBox>
-                <TextBox Width="300" Margin="5,0,0,5" Text="Ciudad"></TextBox>
-                <TextBox Width="300" Margin="5,0,0,5" Text="Provincia"></TextBox>
-                <TextBox Width="300" Margin="5,0,0,5" Text="Codigo Postal"></TextBox>
-                <TextBox Width="300" Margin="5,0,0,5" Text="Pais"></TextBox>
+                <TextBox Width="300" Margin="5,0,0,5" Name="txtDireccion" Text="Direccion" GotFocus="txt_GotFocus" LostFocus="txt_LostFocus"></TextBox>
+                <TextBox Width="300" Margin="5,0,0,5" Name="txtCiudad" Text="Ciudad" GotFocus="txt_GotFocus" LostFocus="txt_LostFocus"></TextBox>
+                <TextBox Width="300" Margin="5,0,0,5" Name="txtProvincia" Text="Provincia" GotFocus="txt_GotFocus" LostFocus="txt_LostFocus"></TextBox>
+                <TextBox Width="300" Margin="5,0,0,5" Name="txtPostal" Text="Codigo Postal" GotFocus="txt_GotFocus" LostFocus="txt_LostFocus"  ></TextBox>
+                <TextBox Width="300" Margin="5,0,0,5" Name="txtPais" Text="Pais" GotFocus="txt_GotFocus" LostFocus="txt_LostFocus"></TextBox>
             </StackPanel>
             <Image Source="/Imagenes/abstract-geometric-logo-or-infinity-line-logo-for-your-company-free-vector.jpg" />
         </StackPanel>
@@ -70,9 +70,8 @@
         <StackPanel Grid.Row="10" Orientation="Horizontal" Margin="0,0,0,7">
             <TextBlock Text="Rol Actual" Width="129" Margin="4,0,0,0"></TextBlock>
             <ComboBox Width="222" Name="txtRol" Margin="-20,0,0,0">
-                <ComboBoxItem Content=""></ComboBoxItem>
-                <ComboBoxItem Content=""></ComboBoxItem>
-                <ComboBoxItem Content=""></ComboBoxItem>
+                <ComboBoxItem Content="Desarrollador"></ComboBoxItem>
+                <ComboBoxItem Content="Analista"></ComboBoxItem>
             </ComboBox>
         </StackPanel>
         <StackPanel Grid.Row="11" Orientation="Horizontal" Margin="0,0,0,7">
@@ -84,12 +83,12 @@
             <Button Width="100" Height="50" Margin="5,0,0,0" >Cancelar</Button>
         </StackPanel>
         <StackPanel Grid.Row="13" Orientation="Horizontal">
-            <DataGrid Width="790">
+            <DataGrid Width="794">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Nombre" Width="200"></DataGridTextColumn>
                     <DataGridTextColumn Header="Apellidos" Width="200"></DataGridTextColumn>
                     <DataGridTextColumn Header="Email" Width="200"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Teléfono" Width="200"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Telefono" Width="200"></DataGridTextColumn>
                 </DataGrid.Columns>
             </DataGrid>
         </StackPanel>
