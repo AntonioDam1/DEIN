@@ -97,5 +97,8 @@
   <ItemGroup>
     <Resource Include="Imagenes\abstract-geometric-logo-or-infinity-line-logo-for-your-company-free-vector.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\alakazam.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -42,15 +42,16 @@
         </StackPanel>
         <StackPanel Grid.Row="5" Orientation="Horizontal" Margin="0,0,0,7">
             <TextBlock Text="Fecha de Nacimiento" Width="112" Margin="4,0,0,0"></TextBlock>
-            <DatePicker Width="200" Name="txtNaacimiento" Margin="20,0,0,0"></DatePicker>
+            <DatePicker Width="200" Name="txtNacimiento" Margin="20,0,0,0"></DatePicker>
         </StackPanel>
         <StackPanel Grid.Row="6" Orientation="Horizontal" Margin="0,0,0,7">
             <TextBlock Text="DNI" Width="50" Margin="4,0,0,0"></TextBlock>
             <TextBox Width="300" Name="txtDNI" Margin="-20,0,0,0"></TextBox>
         </StackPanel>
         <StackPanel Grid.Row="7" Orientation="Horizontal" Margin="0,50,0,7">
-            <TextBlock Text="Adjuntar Fotografia" Width="103" Margin="4,7,0,0"></TextBlock>
-            <Button Margin="10,0,0,22" Padding="7" Width="82" Content="Cargar Foto"/>
+            <TextBlock Text="Adjuntar Fotografia" x:Name="AdjuntarFotogria" Width="103" Margin="4,7,0,0" ></TextBlock>
+            <Button Margin="10,0,0,22" Padding="7" Width="82" Content="Cargar Foto"  Click="CargarImagen_Click"/>
+            <Image Name="imagenAmostrar" Width="150" Height="50" HorizontalAlignment="Center" />
         </StackPanel>
         <StackPanel Grid.Row="8" Orientation="Horizontal" Margin="0,0,0,7">
             <TextBlock Text="Domicilio" Width="112" Margin="4,0,0,0"></TextBlock>
@@ -79,16 +80,16 @@
             <TextBox Width="590" Name="txtDescripcion" Margin="-230,30,0,0" Height="69"></TextBox>
         </StackPanel>
         <StackPanel Grid.Row="12" Orientation="Horizontal" Margin="0,0,0,7">
-            <Button Width="100" Height="50" Margin="250,0,0,0" >Guardar</Button>
-            <Button Width="100" Height="50" Margin="5,0,0,0" >Cancelar</Button>
+            <Button Width="100" Height="50" Margin="250,0,0,0" Click="btnGuardar">Guardar</Button>
+            <Button Width="100" Height="50" Margin="5,0,0,0" Click="btnCancelar">Cancelar</Button>
         </StackPanel>
         <StackPanel Grid.Row="13" Orientation="Horizontal">
-            <DataGrid Width="794">
+            <DataGrid x:Name="datagrid" ItemsSource="{Binding}" AutoGenerateColumns="False" Width="794">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Nombre" Width="200"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Apellidos" Width="200"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Email" Width="200"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Telefono" Width="200"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Nombre" Binding="{Binding nombre}" Width="200"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Apellidos" Binding="{Binding apellidos}" Width="200"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Email" Binding="{Binding email}" Width="200"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Telefono" Binding="{Binding telefono}" Width="200"></DataGridTextColumn>
                 </DataGrid.Columns>
             </DataGrid>
         </StackPanel>
