@@ -55,6 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Puesto.xaml.cs">
+      <DependentUpon>Puesto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,6 +73,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Puesto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -93,6 +107,31 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\capi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\Ordenador.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\alumnado\AritzP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\alumnado\Adrian L.png" />
+    <Resource Include="Imagenes\alumnado\Adrian v.png" />
+    <Resource Include="Imagenes\alumnado\Aitor.png" />
+    <Resource Include="Imagenes\alumnado\Alberto.png" />
+    <Resource Include="Imagenes\alumnado\Antonio.png" />
+    <Resource Include="Imagenes\alumnado\Aritz A.png" />
+    <Resource Include="Imagenes\alumnado\Hugo.png" />
+    <Resource Include="Imagenes\alumnado\Imanoll.png" />
+    <Resource Include="Imagenes\alumnado\Ivan.png" />
+    <Resource Include="Imagenes\alumnado\Juan P.png" />
+    <Resource Include="Imagenes\alumnado\Kaiet.png" />
+    <Resource Include="Imagenes\alumnado\Khrystyna.png" />
+    <Resource Include="Imagenes\alumnado\Randy.png" />
+    <Resource Include="Imagenes\alumnado\Victor.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

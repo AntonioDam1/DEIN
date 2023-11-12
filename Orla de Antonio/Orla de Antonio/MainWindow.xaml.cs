@@ -20,9 +20,19 @@ namespace Orla_de_Antonio
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        private void Persona(object sender, MouseButtonEventArgs e)
         {
-            InitializeComponent();
+
         }
+
+        private void Persona41_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            Window1 win2 = new Window1("Aritz ", "Perez de Ciriza Morrillo", "email_alumno@educacion.navarra.es", "Imagenes/alumno1.jpg");
+
+            win2.Show();
+
+        }
+
+
     }
 }

@@ -5,8 +5,60 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Orla_de_Antonio"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="600">
+        Title="Orla de Antonio" Height="800" Width="600" MinHeight="800" MinWidth="600" MaxHeight="1920" MaxWidth="1080" Icon="/Imagenes/capi.png" Background="#F49d6E">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+                            <!-- Fila 4, Puesto 1 -->
+        <local:Puesto Nombre="Aritz" Apellidos="Perez de Ciriza Morrillo" Email="email@educacion.navarra.es" Foto="/Imagenes/alumnado/AritzP.png" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2"/>
+
+        <local:Puesto Nombre="Randy" Apellidos="Wepia Achana" Email="email@educacion.navarra.es" Foto="/Imagenes/alumnado/Randy.png" Grid.Row="1" Grid.Column="2" Grid.RowSpan="2"/>
+
+        <local:Puesto Nombre="Imanol" Apellidos="Imanol" Email="email@educacion.navarra.es" Foto="/Imagenes/alumnado/Imanoll.png" Grid.Row="1" Grid.Column="4" Grid.RowSpan="2"/>
+
+        <local:Puesto Nombre="Hugo" Apellidos="Hursa" Email="email@educacion.navarra.es" Foto="/Imagenes/alumnado/Hugo.png" Grid.Row="1" Grid.Column="5" Grid.RowSpan="2"/>
+
+        <local:Puesto Nombre="Aitor" Apellidos="Zubero" Email="email@educacion.navarra.es" Foto="/Imagenes/alumnado/Aitor.png" Grid.Row="3" Grid.Column="1" Grid.RowSpan="2"/>
+
+        <local:Puesto Nombre="Antonio" Apellidos="Aguilera" Email="email@educacion.navarra.es" Foto="/Imagenes/alumnado/Antonio.png" Grid.Row="3" Grid.Column="2" Grid.RowSpan="2"/>
+
+        <local:Puesto Nombre="Iván" Apellidos="Ibarguilla" Email="email@educacion.navarra.es" Foto="/Imagenes/alumnado/Ivan.png" Grid.Row="5" Grid.Column="1" Grid.RowSpan="2"/>
+
+        <local:Puesto Nombre="Kaiet" Apellidos="Jimenez" Email="email@educacion.navarra.es" Foto="/Imagenes/alumnado/Kaiet.png" Grid.Row="5" Grid.Column="2" Grid.RowSpan="2"/>
+
+        <local:Puesto Nombre="Juan Pablo" Apellidos="Marin" Email="email@educacion.navarra.es" Foto="/Imagenes/alumnado/Juan P.png" Grid.Row="5" Grid.Column="4" Grid.RowSpan="2"/>
+
+        <local:Puesto Nombre="Victor" Apellidos="Daniel" Email="email@educacion.navarra.es" Foto="/Imagenes/alumnado/Victor.png" Grid.Row="5" Grid.Column="5" Grid.RowSpan="2"/>
+
+        <local:Puesto Nombre="Khrystina" Apellidos="Pollishuck" Email="email@educacion.navarra.es" Foto="/Imagenes/alumnado/Khrystyna.png" Grid.Row="7" Grid.Column="1" Grid.RowSpan="2"/>
+
+        <local:Puesto Nombre="Adrian" Apellidos="Vera" Email="email@educacion.navarra.es" Foto="/Imagenes/alumnado/Adrian v.png" Grid.Row="7" Grid.Column="2" Grid.RowSpan="2"/>
+
+        <local:Puesto Nombre="Adrian" Apellidos="L" Email="email@educacion.navarra.es" Foto="/Imagenes/alumnado/Adrian L.png" Grid.Row="7" Grid.Column="4" Grid.RowSpan="2"/>
+
+        <local:Puesto Nombre="Aritz" Apellidos="Arrondo" Email="email@educacion.navarra.es" Foto="/Imagenes/alumnado/Aritz A.png" Grid.Row="7" Grid.Column="5" Grid.RowSpan="2"/>
+
+        <local:Puesto Nombre="Alberto" Apellidos="Profesor" Email="email@educacion.navarra.es" Foto="/Imagenes/alumnado/Alberto.png" Grid.Row="9" Grid.Column="1" Grid.RowSpan="2"/>
     </Grid>
 </Window>

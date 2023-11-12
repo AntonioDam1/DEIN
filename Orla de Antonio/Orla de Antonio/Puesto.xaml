@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="Orla_de_Antonio.Puesto"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Orla_de_Antonio"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="45*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100*"/>
+        </Grid.ColumnDefinitions>
+        <Viewbox MaxWidth="100" StretchDirection="DownOnly">
+            <TextBlock FontStretch="Expanded" x:Name="LabelPuesto" Grid.Row="0" Grid.Column="0"
+                       Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Viewbox>
+        <Button x:Name="Persona" Grid.Row="1" Grid.Column="0" Margin="15,15,15,0" BorderThickness="0"
+                MouseEnter="Persona_MouseEnter" MouseLeave="Persona_MouseLeave" Click="Persona_Click" MouseDoubleClick="Persona_MouseDobleClick">
+            <Button.OpacityMask>
+                <ImageBrush ImageSource="/Imagenes/alumnado/AritzP.png"/>
+            </Button.OpacityMask>
+            <Button.Background>
+                <ImageBrush ImageSource="{Binding Foto, RelativeSource={RelativeSource AncestorType={x:Type local:Puesto}}}" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Image Grid.Row="2" Grid.Column="0" Source="/Imagenes/Ordenador.jpg" Margin="15"/>
+
+    </Grid>
+</UserControl>
