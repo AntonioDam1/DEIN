@@ -8,10 +8,10 @@
         Title="Home" Height="450" Width="800">
     <Grid Style="{StaticResource AparienciaGrid}">
         <StackPanel Style="{StaticResource AparienciaStackPanel}">
-            <Image Style="{StaticResource ImagenLogo}" Height="Auto" Margin="4,4,4,10" VerticalAlignment="Stretch"></Image>
-            <Button Style="{StaticResource AparienciaBtnNavegacion}">Partidos</Button>
-            <Button Style="{StaticResource AparienciaBtnNavegacion}">Equipos</Button>
-            <Button Style="{StaticResource AparienciaBtnNavegacion}">Competicion</Button>
+            <Image Style="{StaticResource ImagenLogo}" Height="Auto" Margin="4,4,4,10" VerticalAlignment="Stretch" MouseLeftButtonDown="IrAHome"></Image>
+            <Button Style="{StaticResource AparienciaBtnNavegacion}" Click="Clic_Partidos">Partidos</Button>
+            <Button Style="{StaticResource AparienciaBtnNavegacion}" Click="Clic_Equipos">Equipos</Button>
+            <Button Style="{StaticResource AparienciaBtnNavegacion}" Click="Clic_Competicion">Competicion</Button>
             <Button x:Name="btnEstiloIndividual" Content = "Search" Margin="10" Height="Auto" RenderTransformOrigin="0.5,1.148">
                 <Button.Resources>
                     <Style TargetType="{x:Type Button}">
@@ -32,8 +32,7 @@
                 </Button.Resources>
             </Button>
             <Button Style="{StaticResource BarraDivisora}" ></Button>
-            <Image Style="{StaticResource BtnFavorite}"></Image>
-            <Image Style="{StaticResource BtnSetting}"></Image>
+
         </StackPanel>
     </Grid>
 </Window>

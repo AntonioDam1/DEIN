@@ -25,6 +25,12 @@ namespace Pasion
             InitializeComponent();
         }
 
-        
+        private void Acceder_Click(object sender, RoutedEventArgs e)
+        {
+            Home homeWindow = new Home();
+            homeWindow.Show();
+
+            this.Close();
+        }
     }
 }
