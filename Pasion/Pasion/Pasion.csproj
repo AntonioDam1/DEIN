@@ -149,5 +149,11 @@
   <ItemGroup>
     <Resource Include="Imagenes\Login\Untitled.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\60993.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\Settings-icon-symbol-vector.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

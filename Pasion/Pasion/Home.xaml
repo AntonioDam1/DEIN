@@ -32,7 +32,8 @@
                 </Button.Resources>
             </Button>
             <Button Style="{StaticResource BarraDivisora}" ></Button>
-
+            <Image Style="{StaticResource BtnFavorite}"></Image>
+            <Image Style="{StaticResource BtnSetting}"></Image>
         </StackPanel>
     </Grid>
 </Window>
