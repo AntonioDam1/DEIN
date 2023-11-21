@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Image Source="/Imagenes/Login/Untitled.png" Stretch="Fill"/>
+        <Image Source="/Imagenes/Logo.png" Margin="244,66,248,243" Width="300" />
+
+        <Button Style="{StaticResource RoundButtonStyle}" Content="Usuario" Height="26" Margin="294,181,294,212" Width="204"/>
+        <Button Style="{StaticResource RoundButtonStyle}" Content="Contrasena" Margin="294,212,294,182" Width="204"/>
+        <Button Style="{StaticResource RoundButtonStyle}" Content="Acceder" Margin="294,242,294,152" Height="25" Width="204"/>
     </Grid>
 </Window>
