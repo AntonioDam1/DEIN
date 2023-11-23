@@ -5,14 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pasion"
         mc:Ignorable="d"
-        Title="Home" Height="450" Width="800">
+        Title="Home" Height="450" Width="800" ResizeMode="CanResize">
     <Grid Style="{StaticResource AparienciaGrid}">
-        <StackPanel Style="{StaticResource AparienciaStackPanel}">
-            <Image Style="{StaticResource ImagenLogo}" Height="Auto" Margin="4,4,4,10" VerticalAlignment="Stretch" MouseLeftButtonDown="IrAHome"></Image>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="66"></RowDefinition>
+            <RowDefinition Height="169*"></RowDefinition>
+            <RowDefinition Height="184*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Style="{StaticResource AparienciaStackPanel}" Margin="0,0,0,10" Grid.ColumnSpan="2">
+            <Image Source="/Imagenes/Logo.png" Style="{StaticResource ImagenLogo}" Height="Auto" VerticalAlignment="Stretch" MouseLeftButtonDown="IrAHome"/>
             <Button Style="{StaticResource AparienciaBtnNavegacion}" Click="Clic_Partidos">Partidos</Button>
             <Button Style="{StaticResource AparienciaBtnNavegacion}" Click="Clic_Equipos">Equipos</Button>
-            <Button Style="{StaticResource AparienciaBtnNavegacion}" Click="Clic_Competicion">Competicion</Button>
-            <Button x:Name="btnEstiloIndividual" Content = "Search" Margin="10" Height="Auto" RenderTransformOrigin="0.5,1.148">
+            <Button Style="{StaticResource AparienciaBtnNavegacion}" Click="Clic_Competicion">Competiciones</Button>
+            <Button x:Name="btnEstiloIndividual" Content = "Search" Margin="10,17,10,15" Height="Auto" RenderTransformOrigin="0.5,1.148" Width="190">
                 <Button.Resources>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Background" Value="White"/>
@@ -35,5 +44,21 @@
             <Image Style="{StaticResource BtnFavorite}"></Image>
             <Image Style="{StaticResource BtnSetting}"></Image>
         </StackPanel>
+        <Image Source="/Imagenes/o-76.png" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="321"/>
+        <Button Grid.Row="1" Grid.Column="1"
+        Content="El Real Madrid quiere a Davies&#xD;&#xA;23 de Octubre de 2023&#xD;&#xA;El mercado de fichajes sigue centrando buena parte de la &#xD;&#xA;atención del mundo del fútbol. &#xD;&#xA;Los clubes no dejan de buscar los mejores refuerzos para &#xD;&#xA;sus plantillas y tienen ojeadores &#xD;&#xA;repartidos en todo el mundo.&#xD;&#xA;&#xD;&#xA;"
+        Background="White"
+        Width="332"
+        HorizontalAlignment="Right"
+        VerticalAlignment="Top"
+        Margin="0,0,64,0" Height="181"/>
+        <ScrollViewer Grid.Row="2" Grid.Column="0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Hidden" VerticalAlignment="Center" Height="133" Margin="0,20,0,47">
+            <StackPanel Orientation="Horizontal">
+                <MediaElement Source="RutaDelVideo1.mp4" Width="200" Height="105" Margin="5" />
+                <MediaElement Source="RutaDelVideo2.mp4" Width="200" Height="105" Margin="5" />
+                <MediaElement Source="RutaDelVideo2.mp4" Width="200" Height="105" Margin="5" />
+                <!-- Agrega más elementos MediaElement según sea necesario -->
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Window>
