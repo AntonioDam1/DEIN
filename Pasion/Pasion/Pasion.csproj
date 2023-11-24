@@ -37,6 +37,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -157,6 +158,14 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Imagenes\o-76.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Imagenes\Competiciones\Bundesliga-Logo-2010.png" />
+    <Resource Include="Imagenes\Competiciones\Captura-de-pantalla-2023-06-06-a-las-15.05.42.png" />
+    <Resource Include="Imagenes\Competiciones\FIFA_logo_without_slogan.svg.png" />
+    <Resource Include="Imagenes\Competiciones\premier-league-2-logo.png" />
+    <Content Include="Videos\VideoEditor_20231123_120730.mp4" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

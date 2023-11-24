@@ -7,12 +7,21 @@
         mc:Ignorable="d"
         Title="Partidos" Height="450" Width="800">
     <Grid Style="{StaticResource AparienciaGrid}">
-        <StackPanel Style="{StaticResource AparienciaStackPanel}">
-            <Image Style="{StaticResource ImagenLogo}" Height="Auto" Margin="4,4,4,10" VerticalAlignment="Stretch"></Image>
-            <Button Style="{StaticResource AparienciaBtnNavegacion}">Partidos</Button>
-            <Button Style="{StaticResource AparienciaBtnNavegacion}">Equipos</Button>
-            <Button Style="{StaticResource AparienciaBtnNavegacion}">Competicion</Button>
-            <Button x:Name="btnEstiloIndividual" Content = "Search" Margin="10" Height="Auto" RenderTransformOrigin="0.5,1.148">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="66"></RowDefinition>
+            <RowDefinition Height="169*"></RowDefinition>
+            <RowDefinition Height="184*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Style="{StaticResource AparienciaStackPanel}" Margin="0,0,0,10" Grid.ColumnSpan="2">
+            <Image Source="/Imagenes/Logo.png" Style="{StaticResource ImagenLogo}" Height="Auto" VerticalAlignment="Stretch" MouseLeftButtonDown="IrAHome"/>
+            <Button Style="{StaticResource AparienciaBtnNavegacion}" Click="Clic_Partidos">Partidos</Button>
+            <Button Style="{StaticResource AparienciaBtnNavegacion}" Click="Clic_Equipos">Equipos</Button>
+            <Button Style="{StaticResource AparienciaBtnNavegacion}" Click="Clic_Competicion">Competiciones</Button>
+            <Button x:Name="btnEstiloIndividual" Content = "Search" Margin="10,17,10,15" Height="Auto" RenderTransformOrigin="0.5,1.148" Width="190">
                 <Button.Resources>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Background" Value="White"/>
@@ -35,5 +44,27 @@
             <Image Style="{StaticResource BtnFavorite}"></Image>
             <Image Style="{StaticResource BtnSetting}"></Image>
         </StackPanel>
+        <Label Grid.Row="1" Grid.Column="0" FontSize="20">Mes del Calendario:</Label>
+
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Content="{Binding ElementName=txtPartidos, Path=SelectedDate, StringFormat='MMMM'}" 
+       VerticalAlignment="Center" Margin="180,6,-245,152" Height="26" Grid.Column="1" FontSize="15" FontStyle="Oblique"/>
+
+            <DatePicker x:Name="txtPartidos" Margin="290,10,-319,150" Grid.Column="1">
+                <DatePicker.Resources>
+                    <Style TargetType="DatePickerTextBox">
+                        <Setter Property="Visibility" Value="Collapsed" />
+                    </Style>
+                </DatePicker.Resources>
+            </DatePicker>
+        </Grid>
+        <Label Grid.Row="1" Grid.Column="1" FontSize="20">Filtros</Label>
+        <Button Grid.Row="1" Background="White" Margin="5,32,302,0" Width="93" Height="30" Content="Todos" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="1"/>
+        <Button Grid.Row="1" Grid.Column="1" Background="White" Margin="103,32,206,0" Width="91" Height="30" Content="Live" VerticalAlignment="Top" HorizontalAlignment="Center"/>
     </Grid>
 </Window>

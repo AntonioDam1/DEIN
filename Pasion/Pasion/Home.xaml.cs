@@ -19,6 +19,10 @@ namespace Pasion
     /// </summary>
     public partial class Home : Window
     {
+        private bool isLeftMouseButtonDown;
+        private Point lastMousePosition;
+
+        public List<string> Botones { get; set; }
         public Home()
         {
             InitializeComponent();
@@ -54,5 +58,29 @@ namespace Pasion
 
             this.Close();
         }
+
+        private void ScrollViewer_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            isLeftMouseButtonDown = true;
+            lastMousePosition = e.GetPosition(horizontalScrollViewer);
+        }
+
+        private void ScrollViewer_PreviewMouseMove(object sender, MouseEventArgs e)
+        {
+            if (isLeftMouseButtonDown)
+            {
+                Point currentMousePosition = e.GetPosition(horizontalScrollViewer);
+                double horizontalOffset = horizontalScrollViewer.HorizontalOffset + (lastMousePosition.X - currentMousePosition.X);
+                horizontalScrollViewer.ScrollToHorizontalOffset(horizontalOffset);
+                lastMousePosition = currentMousePosition;
+            }
+        }
+
+        private void ScrollViewer_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            isLeftMouseButtonDown = false;
+        }
+
+
     }
 }

@@ -52,13 +52,51 @@
         HorizontalAlignment="Right"
         VerticalAlignment="Top"
         Margin="0,0,64,0" Height="181"/>
-        <ScrollViewer Grid.Row="2" Grid.Column="0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Hidden" VerticalAlignment="Center" Height="133" Margin="0,20,0,47">
-            <StackPanel Orientation="Horizontal">
-                <MediaElement Source="RutaDelVideo1.mp4" Width="200" Height="105" Margin="5" />
-                <MediaElement Source="RutaDelVideo2.mp4" Width="200" Height="105" Margin="5" />
-                <MediaElement Source="RutaDelVideo2.mp4" Width="200" Height="105" Margin="5" />
-                <!-- Agrega más elementos MediaElement según sea necesario -->
+        <Label Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" >Goles de la jornada</Label>
+        <ScrollViewer x:Name="horizontalScrollViewer" Grid.Row="2" Grid.Column="0" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" VerticalAlignment="Center" Height="133" Margin="0,20,0,47"
+              PreviewMouseLeftButtonDown="ScrollViewer_PreviewMouseLeftButtonDown"
+              PreviewMouseMove="ScrollViewer_PreviewMouseMove"
+              PreviewMouseLeftButtonUp="ScrollViewer_PreviewMouseLeftButtonUp">
+            <StackPanel x:Name="mediaPanel" Orientation="Horizontal">
+                <MediaElement Source="c:\users\administrador_inf\desktop\dein\pasion\pasion\videos\videoeditor_20231123_120730.mp4" Width="200" Height="105" Margin="5" />
+                <MediaElement Source="c:\users\administrador_inf\desktop\dein\pasion\pasion\videos\videoeditor_20231123_120730.mp4" Width="200" Height="105" Margin="5" />
+                <MediaElement Source="c:\users\administrador_inf\desktop\dein\pasion\pasion\videos\videoeditor_20231123_120730.mp4" Width="200" Height="105" Margin="5" />
             </StackPanel>
+        </ScrollViewer>
+        <Label Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" >Competiciones Populares</Label>
+        <ScrollViewer Grid.Row="2" Grid.Column="1" x:Name="horizontalScrollViewerButton" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" VerticalAlignment="Center" Height="133" Margin="0,20,0,47"
+              PreviewMouseLeftButtonDown="ScrollViewer_PreviewMouseLeftButtonDown"
+              PreviewMouseMove="ScrollViewer_PreviewMouseMove"
+              PreviewMouseLeftButtonUp="ScrollViewer_PreviewMouseLeftButtonUp" >
+
+            <Border BorderBrush="White" BorderThickness="1" CornerRadius="5" Margin="10">
+                <StackPanel>
+                    <Button Margin="5" Height="67" Width="306" Background="White">
+                        <StackPanel>
+                            <Image Source="/Imagenes/Competiciones/Captura-de-pantalla-2023-06-06-a-las-15.05.42.png" Width="50" Height="50"  />
+                        </StackPanel>
+                    </Button>
+
+                    <Button Margin="5" Height="67" Width="306" Background="White">
+                        <StackPanel>
+                            <Image Source="/Imagenes/Competiciones/premier-league-2-logo.png" Width="50" Height="50"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button Margin="5" Height="67" Width="306" Background="White">
+                        <StackPanel>
+                            <Image Source="/Imagenes/Competiciones/Bundesliga-Logo-2010.png" Width="50" Height="50"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button Margin="5" Height="67" Width="306" Background="White">
+                        <StackPanel>
+                            <Image Source="/Imagenes/Competiciones/FIFA_logo_without_slogan.svg.png" Width="50" Height="50"/>
+
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </Border>
         </ScrollViewer>
     </Grid>
 </Window>
