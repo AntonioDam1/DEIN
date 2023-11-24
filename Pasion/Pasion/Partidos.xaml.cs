@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Collections.ObjectModel;
 
 namespace Pasion
 {
@@ -19,17 +20,16 @@ namespace Pasion
     /// </summary>
     public partial class Partidos : Window
     {
+
         public Partidos()
         {
             InitializeComponent();
         }
 
+
         private void Clic_Partidos(object sender, RoutedEventArgs e)
         {
-            Partidos partidosWindow = new Partidos();
-            partidosWindow.Show();
-
-            this.Close();
+            // No necesitas crear una nueva instancia de Partidos aquí
         }
 
         private void Clic_Equipos(object sender, RoutedEventArgs e)
@@ -37,7 +37,7 @@ namespace Pasion
             Equipos equiposWindow = new Equipos();
             equiposWindow.Show();
 
-            this.Close();
+            Close();
         }
 
         private void Clic_Competicion(object sender, RoutedEventArgs e)
@@ -45,7 +45,7 @@ namespace Pasion
             Competiciones competicionesWindow = new Competiciones();
             competicionesWindow.Show();
 
-            this.Close();
+            Close();
         }
 
         private void IrAHome(object sender, RoutedEventArgs e)
@@ -53,7 +53,16 @@ namespace Pasion
             Home homeWindow = new Home();
             homeWindow.Show();
 
+            Close();
+        }
+
+        private void Formulario(object sender, RoutedEventArgs e)
+        {
+            FormularioUsuario formularioWindow = new FormularioUsuario();
+            formularioWindow.Show();
+
             this.Close();
         }
+
     }
 }

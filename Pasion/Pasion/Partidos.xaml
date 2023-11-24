@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pasion"
         mc:Ignorable="d"
-        Title="Partidos" Height="450" Width="800">
+        Title="Pasion" Height="450" Width="800" Icon="/Imagenes/Logo.png">
     <Grid Style="{StaticResource AparienciaGrid}">
         <Grid.RowDefinitions>
             <RowDefinition Height="66"></RowDefinition>
@@ -42,9 +42,9 @@
             </Button>
             <Button Style="{StaticResource BarraDivisora}" ></Button>
             <Image Style="{StaticResource BtnFavorite}"></Image>
-            <Image Style="{StaticResource BtnSetting}"></Image>
+            <Image Style="{StaticResource BtnSetting}" MouseLeftButtonDown="Formulario"></Image>
         </StackPanel>
-        <Label Grid.Row="1" Grid.Column="0" FontSize="20">Mes del Calendario:</Label>
+        <Label Grid.Row="1" Grid.Column="0" FontSize="18" FontWeight="Bold" Margin="0,2">Mes del Calendario:</Label>
 
         <Grid Grid.Row="1" Grid.Column="0">
             <Grid.ColumnDefinitions>
@@ -55,7 +55,7 @@
             <Label Content="{Binding ElementName=txtPartidos, Path=SelectedDate, StringFormat='MMMM'}" 
        VerticalAlignment="Center" Margin="180,6,-245,152" Height="26" Grid.Column="1" FontSize="15" FontStyle="Oblique"/>
 
-            <DatePicker x:Name="txtPartidos" Margin="290,10,-319,150" Grid.Column="1">
+            <DatePicker x:Name="txtPartidos" Margin="290,8,-319,150" Grid.Column="1">
                 <DatePicker.Resources>
                     <Style TargetType="DatePickerTextBox">
                         <Setter Property="Visibility" Value="Collapsed" />
@@ -63,8 +63,223 @@
                 </DatePicker.Resources>
             </DatePicker>
         </Grid>
-        <Label Grid.Row="1" Grid.Column="1" FontSize="20">Filtros</Label>
+        <Label Grid.Row="1" Grid.Column="1" FontSize="20" FontWeight="Bold">Filtros</Label>
         <Button Grid.Row="1" Background="White" Margin="5,32,302,0" Width="93" Height="30" Content="Todos" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="1"/>
         <Button Grid.Row="1" Grid.Column="1" Background="White" Margin="103,32,206,0" Width="91" Height="30" Content="Live" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <Grid Margin="15,32,322,111" Grid.Row="1" Grid.Column="0">
+            <Image Source="/Imagenes/Competiciones/Captura-de-pantalla-2023-06-06-a-las-15.05.42.png" />
+        </Grid>
+
+        <Border Style="{StaticResource BorderStyle}" Margin="56,78,46,0" Grid.Row="1" Grid.Column="0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid Style="{StaticResource GridStyle}" Margin="5,10,250,37">
+                    <Image Style="{StaticResource ImageStyle}" Source="/Imagenes/Equipos/Rayo_Vallecano_logo.svg.png" Width="30" Margin="6,-28,5,73"/>
+                    <Label Style="{StaticResource LabelStyle}" Margin="48,3,-93,55" FontSize="8" FontWeight="Bold">Rayo Vallecano</Label>
+                </Grid>
+                <Grid Style="{StaticResource GridStyle}" Margin="5,27,250,37">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="23*"/>
+                        <ColumnDefinition Width="18*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Style="{StaticResource ImageStyle}" Source="/Imagenes/Equipos/584a9b3bb080d7616d298777.png" Width="30" Margin="6,10,5,27" Grid.ColumnSpan="2"/>
+                    <Label Style="{StaticResource LabelStyle}" Margin="25,40,-93,55" FontSize="8" FontWeight="Bold" Grid.Column="1">FC Barcelona</Label>
+                </Grid>
+                <Border Style="{StaticResource BorderStyle}" BorderBrush="Black" BorderThickness="1" VerticalAlignment="Stretch" Margin="155,15,140,86"/>
+                <Grid Style="{StaticResource GridStyle}" Margin="155,0,0,76">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Style="{StaticResource LabelStyle}" FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="0">Rayo</Label>
+                    <Label Style="{StaticResource LabelStyle}" FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom"  HorizontalAlignment="Center" Grid.Column="1" Grid.Row="0">Empate</Label>
+                    <Label Style="{StaticResource LabelStyle}" FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom"  HorizontalAlignment="Center" Grid.Column="2" Grid.Row="0">Barca</Label>
+                    <Label Style="{StaticResource LabelStyle}" FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1">40%</Label>
+                    <Label Style="{StaticResource LabelStyle}" FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="1">10%</Label>
+                    <Label Style="{StaticResource LabelStyle}" FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="2" Grid.Row="1">40%</Label>
+                    <Label Style="{StaticResource LabelStyle}" FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="2">2:00 pm</Label>
+                </Grid>
+            </Grid>
+        </Border>
+        <Border Style="{StaticResource BorderStyle}" Margin="56,78,46,0" Grid.Row="1" Grid.Column="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid Style="{StaticResource GridStyle}" Margin="5,10,250,37">
+                    <Image Style="{StaticResource ImageStyle}" Source="/Imagenes/Equipos/584ad7abb519ea740933a953.png" Width="30" Margin="6,-28,5,73"/>
+                    <Label Style="{StaticResource LabelStyle}" Margin="48,3,-93,55" FontSize="8" FontWeight="Bold">Cádiz FC</Label>
+                </Grid>
+                <Grid Style="{StaticResource GridStyle}" Margin="5,27,250,37">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="23*"/>
+                        <ColumnDefinition Width="18*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Style="{StaticResource ImageStyle}" Source="/Imagenes/Equipos/584a9b47b080d7616d298778.png" Width="30" Margin="6,10,5,27" Grid.ColumnSpan="2"/>
+                    <Label Style="{StaticResource LabelStyle}" Margin="25,40,-93,55" FontSize="8" FontWeight="Bold" Grid.Column="1">Real Madrid</Label>
+                </Grid>
+                <Border Style="{StaticResource BorderStyle}" BorderBrush="Black" BorderThickness="1" VerticalAlignment="Stretch" Margin="155,15,140,86"/>
+                <Grid Style="{StaticResource GridStyle}" Margin="155,0,0,76">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Style="{StaticResource LabelStyle}" FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="0">Madrid</Label>
+                    <Label Style="{StaticResource LabelStyle}" FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom"  HorizontalAlignment="Center" Grid.Column="1" Grid.Row="0">Empate</Label>
+                    <Label Style="{StaticResource LabelStyle}" FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom"  HorizontalAlignment="Center" Grid.Column="2" Grid.Row="0">Cádiz</Label>
+                    <Label Style="{StaticResource LabelStyle}" FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1">70%</Label>
+                    <Label Style="{StaticResource LabelStyle}" FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="1">10%</Label>
+                    <Label Style="{StaticResource LabelStyle}" FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="2" Grid.Row="1">20%</Label>
+                    <Label Style="{StaticResource LabelStyle}" FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="2">6:30 pm</Label>
+                </Grid>
+            </Grid>
+        </Border>
+        <Grid Margin="10,182,344,150" Grid.Row="1" Grid.Column="0" Grid.RowSpan="2">
+            <Image Source="/Imagenes/Competiciones/premier-league-2-logo.png" Margin="0,0,-14,0"/>
+        </Grid>
+        <Border Style="{StaticResource BorderStyle}" Background="White" BorderBrush="Black" BorderThickness="1" Margin="56,55,46,40" Grid.Row="2" Grid.Column="0">
+            <Border.Resources>
+                <Style TargetType="Grid" BasedOn="{StaticResource GridStyle}"/>
+                <Style TargetType="Image" BasedOn="{StaticResource ImageStyle}"/>
+                <Style TargetType="Label" BasedOn="{StaticResource LabelStyle}"/>
+            </Border.Resources>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid Margin="5,10,250,37">
+                    <Image Style="{StaticResource ImageStyle}" Source="/Imagenes/Equipos/Manchester_City_FC_badge.svg.png" Width="30" Margin="6,-28,5,73"/>
+                    <Label Style="{StaticResource LabelStyle}" Margin="48,3,-93,55" FontSize="8" FontWeight="Bold">Manchester City</Label>
+                </Grid>
+                <Grid Margin="5,27,250,37">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="23*"/>
+                        <ColumnDefinition Width="18*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Style="{StaticResource ImageStyle}" Source="/Imagenes/Equipos/Liverpool_FC.png" Width="30" Margin="6,10,5,27" Grid.ColumnSpan="2"/>
+                    <Label Style="{StaticResource LabelStyle}" Margin="25,40,-93,55" FontSize="8" FontWeight="Bold" Grid.Column="1">Liverpool</Label>
+                </Grid>
+                <Border Style="{StaticResource BorderStyle}" BorderBrush="Black" BorderThickness="1" VerticalAlignment="Stretch" Margin="155,15,140,86"/>
+                <Grid Style="{StaticResource GridStyle}" Margin="155,0,0,76">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Style="{StaticResource LabelStyle}" FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="0">Manchester</Label>
+                    <Label Style="{StaticResource LabelStyle}" FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom"  HorizontalAlignment="Center" Grid.Column="1" Grid.Row="0">Empate</Label>
+                    <Label Style="{StaticResource LabelStyle}" FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom"  HorizontalAlignment="Center" Grid.Column="2" Grid.Row="0">Liverpool</Label>
+                    <Label Style="{StaticResource LabelStyle}" FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1">50%</Label>
+                    <Label Style="{StaticResource LabelStyle}" FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="1">5%</Label>
+                    <Label Style="{StaticResource LabelStyle}" FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="2" Grid.Row="1">45%</Label>
+                    <Label Style="{StaticResource LabelStyle}" FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="2">1:30 pm</Label>
+                </Grid>
+            </Grid>
+        </Border>
+        <Border  Background="White" BorderBrush="Black" BorderThickness="1" Margin="56,55,46,40" Grid.Row="2" Grid.Column="0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid Margin="5,10,250,37">
+                    <Image Source="/Imagenes/Equipos/Manchester_City_FC_badge.svg.png" Width="30" Margin="6,-28,5,73"/>
+                    <Label Margin="48,3,-93,55" FontSize="8" FontWeight="Bold">Manchester City</Label>
+                </Grid>
+                <Grid Margin="5,27,250,37">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="23*"/>
+                        <ColumnDefinition Width="18*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="/Imagenes/Equipos/Liverpool_FC.png" Width="30" Margin="6,10,5,27" Grid.ColumnSpan="2"/>
+                    <Label Margin="25,40,-93,55" FontSize="8" FontWeight="Bold" Grid.Column="1">Liverpool</Label>
+                </Grid>
+                <Border BorderBrush="Black" BorderThickness="1" VerticalAlignment="Stretch" Margin="155,15,140,86"/>
+                <Grid Margin="155,0,0,76">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="0">Manchester</Label>
+                    <Label FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom"  HorizontalAlignment="Center" Grid.Column="1" Grid.Row="0">Empate</Label>
+                    <Label FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom"  HorizontalAlignment="Center" Grid.Column="2" Grid.Row="0">Liverpool</Label>
+                    <Label FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1">50%</Label>
+                    <Label FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="1">5%</Label>
+                    <Label FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="2" Grid.Row="1">45%</Label>
+                    <Label FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="2">1:30 pm</Label>
+                </Grid>
+            </Grid>
+        </Border>
+        <Border  Background="White" BorderBrush="Black" BorderThickness="1" Margin="56,55,46,40" Grid.Row="2" Grid.Column="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid Margin="5,10,250,37">
+
+                    <Image Source="/Imagenes/Equipos/brentford-fc-logo-E928FFBD93-seeklogo.com.png" Width="30" Margin="6,-28,5,73"/>
+                    <Label Margin="48,3,-93,55" FontSize="8" FontWeight="Bold">Manchester City</Label>
+                </Grid>
+                <Grid Margin="5,27,250,37">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="23*"/>
+                        <ColumnDefinition Width="18*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="/Imagenes/Equipos/Arsenal_FC.png" Width="30" Margin="6,10,5,27" Grid.ColumnSpan="2"/>
+                    <Label Margin="25,40,-93,55" FontSize="8" FontWeight="Bold" Grid.Column="1">Liverpool</Label>
+                </Grid>
+                <Border BorderBrush="Black" BorderThickness="1" VerticalAlignment="Stretch" Margin="155,15,140,86"/>
+                <Grid Margin="155,0,0,76">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="0">Brenfort</Label>
+                    <Label FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom"  HorizontalAlignment="Center" Grid.Column="1" Grid.Row="0">Empate</Label>
+                    <Label FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom"  HorizontalAlignment="Center" Grid.Column="2" Grid.Row="0">Arsenal</Label>
+                    <Label FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1">20%</Label>
+                    <Label FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="1">15%</Label>
+                    <Label FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="2" Grid.Row="1">65%</Label>
+                    <Label FontSize="10" FontWeight="Bold" VerticalContentAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="2">6:30 pm</Label>
+                </Grid>
+            </Grid>
+        </Border>
     </Grid>
 </Window>

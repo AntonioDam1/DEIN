@@ -23,5 +23,46 @@ namespace Pasion
         {
             InitializeComponent();
         }
+
+        private void Clic_Partidos(object sender, RoutedEventArgs e)
+        {
+            Partidos partidosWindow = new Partidos();
+            partidosWindow.Show();
+
+            Close();
+        }
+
+        private void Clic_Equipos(object sender, RoutedEventArgs e)
+        {
+            Equipos equiposWindow = new Equipos();
+            equiposWindow.Show();
+
+            Close();
+        }
+
+        private void Clic_Competicion(object sender, RoutedEventArgs e)
+        {
+            Competiciones competicionesWindow = new Competiciones();
+            competicionesWindow.Show();
+
+            Close();
+        }
+
+        private void IrAHome(object sender, RoutedEventArgs e)
+        {
+            Home homeWindow = new Home();
+            homeWindow.Show();
+
+            Close();
+        }
+
+        private void Formulario(object sender, RoutedEventArgs e)
+        {
+            FormularioUsuario formularioWindow = new FormularioUsuario();
+            formularioWindow.Show();
+
+            this.Close();
+        }
+
     }
 }

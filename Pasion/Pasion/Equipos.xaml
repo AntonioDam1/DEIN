@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pasion"
         mc:Ignorable="d"
-        Title="Equipos" Height="450" Width="800">
-    <Grid Style="{StaticResource AparienciaGrid}">
+        Title="Pasion" Height="450" Width="800" Icon="/Imagenes/Logo.png">
+    <Grid Style="{StaticResource AparienciaGrid}" Height="Auto" Margin="0,0,-8,-31" VerticalAlignment="Stretch">
         <StackPanel Style="{StaticResource AparienciaStackPanel}">
-            <Image Style="{StaticResource ImagenLogo}" Height="Auto" Margin="4,4,4,10" VerticalAlignment="Stretch"></Image>
-            <Button Style="{StaticResource AparienciaBtnNavegacion}">Partidos</Button>
-            <Button Style="{StaticResource AparienciaBtnNavegacion}">Equipos</Button>
-            <Button Style="{StaticResource AparienciaBtnNavegacion}">Competicion</Button>
+            <Image Source="/Imagenes/Logo.png" Style="{StaticResource ImagenLogo}" Height="Auto" VerticalAlignment="Stretch" MouseLeftButtonDown="IrAHome"/>
+            <Button Style="{StaticResource AparienciaBtnNavegacion}" Click="Clic_Partidos">Partidos</Button>
+            <Button Style="{StaticResource AparienciaBtnNavegacion}" Click="Clic_Equipos">Equipos</Button>
+            <Button Style="{StaticResource AparienciaBtnNavegacion}" Click="Clic_Competicion">Competiciones</Button>
             <Button x:Name="btnEstiloIndividual" Content = "Search" Margin="10" Height="Auto" RenderTransformOrigin="0.5,1.148">
                 <Button.Resources>
                     <Style TargetType="{x:Type Button}">
@@ -33,7 +33,180 @@
             </Button>
             <Button Style="{StaticResource BarraDivisora}" ></Button>
             <Image Style="{StaticResource BtnFavorite}"></Image>
-            <Image Style="{StaticResource BtnSetting}"></Image>
+            <Image Style="{StaticResource BtnSetting}" MouseLeftButtonDown="Formulario"></Image>
         </StackPanel>
+        <Grid Margin="0,87,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="14*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label FontSize="20" FontWeight="Bold" Grid.Row="0" HorizontalAlignment="Center" Margin="68,0,38,10" Width="54" Grid.RowSpan="2">A</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="1" HorizontalAlignment="Center" Margin="38,0,38,22" Width="84" Grid.RowSpan="2">América</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="2" HorizontalAlignment="Center" Margin="10,0,10,22" Width="140" Grid.RowSpan="2">Athletic Club</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="3" HorizontalAlignment="Center" Margin="38,0,38,19" Width="84" Grid.RowSpan="2">Almeria</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="4" HorizontalAlignment="Center" Margin="38,0,10,21" Width="112" Grid.RowSpan="2">AC Milán</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="5" HorizontalAlignment="Center" Margin="38,0,38,-20" Width="84">Al Hilal</Label>
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="26*"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="32*"></RowDefinition>
+                    <RowDefinition Height="31*"></RowDefinition>
+                    <RowDefinition Height="31*"></RowDefinition>
+                    <RowDefinition Height="31*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label FontSize="20" FontWeight="Bold" Grid.Row="0" HorizontalAlignment="Center" Margin="68,0,38,10" Width="54" Grid.RowSpan="2">B</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="1" HorizontalAlignment="Center" Margin="10,0,38,0" Width="112">Barcelona</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="2" HorizontalAlignment="Center" Margin="10,0,10,20" Width="140" Grid.RowSpan="2">Boca Junior</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="3" HorizontalAlignment="Center" Margin="38,0,38,10" Width="84" Grid.RowSpan="2">Borussia</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="4" HorizontalAlignment="Center" Margin="38,0,38,20" Width="84" Grid.RowSpan="2">Betis</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="5" HorizontalAlignment="Center" Margin="38,0,38,-20" Width="84">Bayer</Label>
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="14*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label FontSize="20" FontWeight="Bold" Grid.Row="0" HorizontalAlignment="Center" Margin="68,0,58,10" Width="34" Grid.RowSpan="2">C</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="1" HorizontalAlignment="Center" Margin="38,0,10,22" Width="112" Grid.RowSpan="2">Colo Colo</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="2" HorizontalAlignment="Center" Margin="38,0,38,10" Width="84" Grid.RowSpan="2">Chelsea</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="3" HorizontalAlignment="Center" Margin="38,0,38,10" Width="84" Grid.RowSpan="2">Chivas</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="4" HorizontalAlignment="Center" Margin="38,0,38,21" Width="84" Grid.RowSpan="2">Celta</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="5" HorizontalAlignment="Center" Margin="10,0,10,-18" Width="140">Celta De Vigo</Label>
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="14*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label FontSize="20" FontWeight="Bold" Grid.Row="0" HorizontalAlignment="Center" Margin="68,0,68,22" Width="24" Grid.RowSpan="2">D</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="1" HorizontalAlignment="Center" Margin="38,0,38,22" Width="84" Grid.RowSpan="2">Dinamo De Kiev</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="2" HorizontalAlignment="Center" Margin="38,0,25,22" Width="97" Grid.RowSpan="2">Dorados</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="3" HorizontalAlignment="Center" Margin="38,0,10,21" Width="112" Grid.RowSpan="2">Deportivo</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="4" HorizontalAlignment="Center" Margin="38,0,25,20" Width="97" Grid.RowSpan="2">Danuvios</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="5" HorizontalAlignment="Center" Margin="0,0,0,-10" Width="160">Deportivo Moro</Label>
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="14*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label FontSize="20" FontWeight="Bold" Grid.Row="0" HorizontalAlignment="Center" Margin="68,0,68,22" Width="24" Grid.RowSpan="2">E</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="1" HorizontalAlignment="Center" Margin="38,0,20,20" Width="102" Grid.RowSpan="2">Espanyol</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="2" HorizontalAlignment="Center" Margin="38,0,38,19" Width="84" Grid.RowSpan="2">Everton</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="3" HorizontalAlignment="Center" Margin="10,0,20,21" Width="130" Grid.RowSpan="2">Estudiantes</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="4" HorizontalAlignment="Center" Margin="-10,0,0,21" Width="170" Grid.RowSpan="2">Estudiantes Plata</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="5" HorizontalAlignment="Center" Margin="38,0,38,-11" Width="84">Empoli</Label>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="14*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label FontSize="20" FontWeight="Bold" Grid.Row="0" HorizontalAlignment="Center" Margin="68,0,68,21" Width="24" Grid.RowSpan="2">F</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="1" HorizontalAlignment="Center" Margin="38,0,22,0" Width="100">Frankfurt</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="2" HorizontalAlignment="Center" Margin="38,0,22,21" Width="100" Grid.RowSpan="2">Fiorentina</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="3" HorizontalAlignment="Center" Margin="38,0,10,20" Width="112" Grid.RowSpan="2">Fluminense</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="4" HorizontalAlignment="Center" Margin="38,0,22,0" Width="100">Fulham</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="5" HorizontalAlignment="Center" Margin="38,0,10,-16" Width="112">Fenerbache</Label>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="14*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label FontSize="20" FontWeight="Bold" Grid.Row="0" HorizontalAlignment="Center" Margin="68,0,68,21" Width="24" Grid.RowSpan="2">G</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="1" HorizontalAlignment="Center" Margin="38,0,29,22" Width="93" Grid.RowSpan="2">Granada</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="2" HorizontalAlignment="Center" Margin="38,0,38,21" Width="84" Grid.RowSpan="2">Getafe</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="3" HorizontalAlignment="Center" Margin="38,0,38,21" Width="84" Grid.RowSpan="2">Girona</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="4" HorizontalAlignment="Center" Margin="38,0,0,22" Width="122" Grid.RowSpan="2">Galatasaray</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="5" HorizontalAlignment="Center" Margin="38,0,29,-10" Width="93">Gimnasia</Label>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="14*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label FontSize="20" FontWeight="Bold" Grid.Row="0" HorizontalAlignment="Center" Margin="68,0,68,10" Width="24" Grid.RowSpan="2">H</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="1" HorizontalAlignment="Center" Margin="38,0,38,20" Width="84" Grid.RowSpan="2">Huracan</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="2" HorizontalAlignment="Center" Margin="38,0,38,10" Width="84" Grid.RowSpan="2">Hamburgo</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="3" HorizontalAlignment="Center" Margin="38,0,38,22" Width="84" Grid.RowSpan="2">Huesca</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="4" HorizontalAlignment="Center" Margin="25,0,10,10" Width="125" Grid.RowSpan="2">Hoffenheim</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="5" HorizontalAlignment="Center" Margin="38,0,10,-11" Width="112">Hannover</Label>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="14*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label FontSize="20" FontWeight="Bold" Grid.Row="0" HorizontalAlignment="Center" Margin="68,0,68,21" Width="24" Grid.RowSpan="2">I</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="1" HorizontalAlignment="Center" Margin="10,0,0,20" Width="150" Grid.RowSpan="2">Independiente</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="2" HorizontalAlignment="Center" Margin="10,0,10,22" Width="140" Grid.RowSpan="2">Inter De Milán</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="3" HorizontalAlignment="Center" Margin="51,0,47,0" Width="62">Inder</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="4" HorizontalAlignment="Center" Margin="38,0,38,21" Width="84" Grid.RowSpan="2">Iguala</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="5" HorizontalAlignment="Center" Margin="10,0,10,-9" Width="140">Inter De Brasil</Label>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="14*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                    <RowDefinition Height="17*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label FontSize="20" FontWeight="Bold" Grid.Row="0" HorizontalAlignment="Center" Margin="68,0,68,10" Width="24" Grid.RowSpan="2">J</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="1" HorizontalAlignment="Center" Margin="38,0,27,10" Width="95" Grid.RowSpan="2">Juventus</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="2" HorizontalAlignment="Center" Margin="38,0,38,20" Width="84" Grid.RowSpan="2">Jaen</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="3" HorizontalAlignment="Center" Margin="38,0,27,19" Width="95" Grid.RowSpan="2">Jaguares</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="4" HorizontalAlignment="Center" Margin="38,0" Width="84" Height="41" VerticalAlignment="Top" Grid.RowSpan="2">Jerez</Label>
+                <Label FontSize="20" FontWeight="DemiBold" Grid.Row="5" HorizontalAlignment="Center" Margin="38,0,38,-11" Width="84">Juvenil</Label>
+            </Grid>
+        </Grid>
     </Grid>
 </Window>

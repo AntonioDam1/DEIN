@@ -80,5 +80,59 @@
             <Setter Property = "Margin" Value = "0,17,10,0"/>
             <Setter Property="RenderTransformOrigin" Value="0.338,-7.949"/>
         </Style>
+        <Style x:Key="BorderStyle" TargetType="Border">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <!-- Agrega otros setters según sea necesario -->
+        </Style>
+
+        <Style x:Key="GridStyle" TargetType="Grid">
+            <Setter Property="Margin" Value="5,10,250,37"/>
+            <!-- Agrega otros setters según sea necesario -->
+        </Style>
+
+        <Style x:Key="ImageStyle" TargetType="Image">
+            <Setter Property="Width" Value="30"/>
+            <!-- Agrega otros setters según sea necesario -->
+        </Style>
+
+        <Style x:Key="LabelStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="10"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <!-- Agrega otros setters según sea necesario -->
+        </Style>
+        <Style x:Name="ComboBoxCompeticiones" TargetType="ComboBox">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+        <Style x:Key="RoundToggleButtonStyle" TargetType="ToggleButton">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToggleButton">
+                        <Grid>
+                            <Ellipse x:Name="ellipse" Stroke="Black" StrokeThickness="2">
+                                <Ellipse.Fill>
+                                    <SolidColorBrush Color="White"/>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="ellipse" Property="Fill">
+                                    <Setter.Value>
+                                        <SolidColorBrush Color="White"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
     </Application.Resources>
 </Application>

@@ -59,6 +59,14 @@ namespace Pasion
             this.Close();
         }
 
+        private void Formulario(object sender, RoutedEventArgs e)
+        {
+            FormularioUsuario formularioWindow = new FormularioUsuario();
+            formularioWindow.Show();
+
+            this.Close();
+        }
+
         private void ScrollViewer_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             isLeftMouseButtonDown = true;

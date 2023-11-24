@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pasion"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Pasion" Height="450" Width="800" Icon="/Imagenes/Logo.png">
     <Grid>
         <Image Source="/Imagenes/Login/Untitled.png" Stretch="Fill"/>
         <Image Source="/Imagenes/Logo.png" Margin="244,66,248,243" Width="300" />

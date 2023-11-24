@@ -56,9 +56,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="resultados.xaml.cs">
-      <DependentUpon>resultados.xaml</DependentUpon>
-    </Compile>
     <Page Include="Competiciones.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,15 +64,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Favoritos.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="FormularioUsuario.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Home.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Ligas.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -93,24 +86,17 @@
     <Compile Include="Equipos.xaml.cs">
       <DependentUpon>Equipos.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Favoritos.xaml.cs">
-      <DependentUpon>Favoritos.xaml</DependentUpon>
+    <Compile Include="FormularioUsuario.xaml.cs">
+      <DependentUpon>FormularioUsuario.xaml</DependentUpon>
     </Compile>
     <Compile Include="Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Ligas.xaml.cs">
-      <DependentUpon>Ligas.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Partidos.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="resultados.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -165,6 +151,45 @@
     <Resource Include="Imagenes\Competiciones\Captura-de-pantalla-2023-06-06-a-las-15.05.42.png" />
     <Resource Include="Imagenes\Competiciones\FIFA_logo_without_slogan.svg.png" />
     <Resource Include="Imagenes\Competiciones\premier-league-2-logo.png" />
+    <Resource Include="Imagenes\Equipos\584a9b3bb080d7616d298777.png" />
+    <Resource Include="Imagenes\Equipos\584a9b47b080d7616d298778.png" />
+    <Resource Include="Imagenes\Equipos\584ad7abb519ea740933a953.png" />
+    <Resource Include="Imagenes\Equipos\atletico-madrid_109483.png" />
+    <Resource Include="Imagenes\Equipos\Rayo_Vallecano_logo.svg.png" />
+    <Resource Include="Imagenes\Equipos\Rcd_mallorca.png" />
+    <Resource Include="Imagenes\Equipos\Liverpool_FC.png" />
+    <Resource Include="Imagenes\Equipos\Manchester_City_FC_badge.svg.png" />
+    <Resource Include="Imagenes\Equipos\Arsenal_FC.png" />
+    <Resource Include="Imagenes\Equipos\brentford-fc-logo-E928FFBD93-seeklogo.com.png" />
+    <Resource Include="Imagenes\584a9b3bb080d7616d298777.png" />
+    <Resource Include="Imagenes\584a9b47b080d7616d298778.png" />
+    <Resource Include="Imagenes\584ad7abb519ea740933a953.png" />
+    <Resource Include="Imagenes\Arsenal_FC.png" />
+    <Resource Include="Imagenes\atletico-madrid_109483.png" />
+    <Resource Include="Imagenes\brentford-fc-logo-E928FFBD93-seeklogo.com.png" />
+    <Resource Include="Imagenes\Liverpool_FC.png" />
+    <Resource Include="Imagenes\Manchester_City_FC_badge.svg.png" />
+    <Resource Include="Imagenes\Rayo_Vallecano_logo.svg.png" />
+    <Resource Include="Imagenes\Rcd_mallorca.png" />
+    <Resource Include="Imagenes\Bundesliga-Logo-2010.png" />
+    <Resource Include="Imagenes\Captura-de-pantalla-2023-06-06-a-las-15.05.42.png" />
+    <Resource Include="Imagenes\FIFA_logo_without_slogan.svg.png" />
+    <Resource Include="Imagenes\premier-league-2-logo.png" />
+    <Resource Include="Imagenes\Competiciones\conmebol-logo-C2A6D18049-seeklogo.com.png" />
+    <Resource Include="Imagenes\Competiciones\descarga.png" />
+    <Resource Include="Imagenes\Competiciones\uefa-logo.png" />
+    <Resource Include="Imagenes\1200px-Barclays_FA_Women%27s_Super_League_logo.svg.png" />
+    <Resource Include="Imagenes\2._Bundesliga_logo.svg.png" />
+    <Resource Include="Imagenes\2._Frauen-Bundesliga_Logo.svg.png" />
+    <Resource Include="Imagenes\825e80bac186d247dd9332f1440d20df-logotipo-del-equipo-de-ftbol-de-alemania.png" />
+    <Resource Include="Imagenes\conmebol-logo-C2A6D18049-seeklogo.com.png" />
+    <Resource Include="Imagenes\descarga.png" />
+    <Resource Include="Imagenes\espana-real-federacion-espanola-de-futbol-logo-379997DEB4-seeklogo.com.png" />
+    <Resource Include="Imagenes\Federacion_Inglesa_de_Futbol-logo-ACDA353DFD-seeklogo.com.png" />
+    <Resource Include="Imagenes\finetwork-liga-f-logo-5BC7900A28-seeklogo.com.png" />
+    <Resource Include="Imagenes\LaLiga_Hypermotion_2023_Horizontal_Logo.svg.png" />
+    <Resource Include="Imagenes\sky-bet-championship-logo-C4F6910987-seeklogo.com.png" />
+    <Resource Include="Imagenes\uefa-logo.png" />
     <Content Include="Videos\VideoEditor_20231123_120730.mp4" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

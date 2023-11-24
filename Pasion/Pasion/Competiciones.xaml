@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pasion"
         mc:Ignorable="d"
-        Title="Competiciones" Height="450" Width="800">
+         Title="Pasion" Height="450" Width="800" Icon="/Imagenes/Logo.png">
     <Grid Style="{StaticResource AparienciaGrid}">
         <StackPanel Style="{StaticResource AparienciaStackPanel}">
-            <Image Style="{StaticResource ImagenLogo}" Height="Auto" Margin="4,4,4,10" VerticalAlignment="Stretch"></Image>
-            <Button Style="{StaticResource AparienciaBtnNavegacion}">Partidos</Button>
-            <Button Style="{StaticResource AparienciaBtnNavegacion}">Equipos</Button>
-            <Button Style="{StaticResource AparienciaBtnNavegacion}">Competicion</Button>
+            <Image Source="/Imagenes/Logo.png" Style="{StaticResource ImagenLogo}" Height="Auto" VerticalAlignment="Stretch" MouseLeftButtonDown="IrAHome"/>
+            <Button Style="{StaticResource AparienciaBtnNavegacion}" Click="Clic_Partidos">Partidos</Button>
+            <Button Style="{StaticResource AparienciaBtnNavegacion}" Click="Clic_Equipos">Equipos</Button>
+            <Button Style="{StaticResource AparienciaBtnNavegacion}" Click="Clic_Competicion">Competiciones</Button>
             <Button x:Name="btnEstiloIndividual" Content = "Search" Margin="10" Height="Auto" RenderTransformOrigin="0.5,1.148">
                 <Button.Resources>
                     <Style TargetType="{x:Type Button}">
@@ -33,7 +33,102 @@
             </Button>
             <Button Style="{StaticResource BarraDivisora}" ></Button>
             <Image Style="{StaticResource BtnFavorite}"></Image>
-            <Image Style="{StaticResource BtnSetting}"></Image>
+            <Image Style="{StaticResource BtnSetting}" MouseLeftButtonDown="Formulario"></Image>
         </StackPanel>
+        <Grid Margin="0,51,10,31">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" HorizontalAlignment="Right" Width="790">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="11*"></RowDefinition>
+                    <RowDefinition Height="30*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Image Source="/Imagenes/Competiciones/uefa-logo.png" Grid.Row="0" HorizontalAlignment="Left"/>
+                <Label FontSize="17" FontWeight="Bold" Grid.Row="0" HorizontalAlignment="Center" Margin="49,0,246,0" Width="495">Competiciones Europeas</Label>
+                <ComboBox Height="Auto" Grid.Row="1" Width="200" Margin="49,26,541,25" Background="White">
+                    <ComboBoxItem IsSelected="True">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Imagenes/825e80bac186d247dd9332f1440d20df-logotipo-del-equipo-de-ftbol-de-alemania.png" Width="50" Height="30"/>
+                            <TextBlock Margin="10">Alemania</TextBlock>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Imagenes/FIFA_logo_without_slogan.svg.png" Width="50" Height="30"/>
+                            <TextBlock>Bundesliga</TextBlock>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Imagenes/FIFA_logo_without_slogan.svg.png" Width="50" Height="30" />
+                            <TextBlock>Budesliga 2</TextBlock>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Imagenes/FIFA_logo_without_slogan.svg.png" Width="50" Height="30" />
+                            <TextBlock>Frauen</TextBlock>
+                        </StackPanel>
+                    </ComboBoxItem>
+                </ComboBox>
+
+                <ComboBox Height="Auto" Grid.Row="1" Width="200" Margin="283,26,307,25" Background="White">
+                    <ComboBoxItem IsSelected="True">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Imagenes/Federacion_Inglesa_de_Futbol-logo-ACDA353DFD-seeklogo.com.png" Width="50" Height="30"/>
+                            <TextBlock Margin="10">Inglaterra</TextBlock>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Imagenes/FIFA_logo_without_slogan.svg.png" Width="50" Height="30"/>
+                            <TextBlock>Premier League</TextBlock>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Imagenes/FIFA_logo_without_slogan.svg.png" Width="50" Height="30" />
+                            <TextBlock>Championship</TextBlock>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Imagenes/FIFA_logo_without_slogan.svg.png" Width="50" Height="30" />
+                            <TextBlock>Barclays League</TextBlock>
+                        </StackPanel>
+                    </ComboBoxItem>
+                </ComboBox>
+                <ComboBox Height="Auto" Grid.Row="1" Width="200" Margin="522,26,68,25" Background="White">
+                    <ComboBoxItem IsSelected="True">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Imagenes/espana-real-federacion-espanola-de-futbol-logo-379997DEB4-seeklogo.com.png" Width="50" Height="30"/>
+                            <TextBlock Margin="10">España</TextBlock>
+
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Imagenes/FIFA_logo_without_slogan.svg.png" Width="50" Height="30"/>
+                            <TextBlock>LaLiga</TextBlock>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Imagenes/FIFA_logo_without_slogan.svg.png" Width="50" Height="30" />
+                            <TextBlock>LaLiga II</TextBlock>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Imagenes/FIFA_logo_without_slogan.svg.png" Width="50" Height="30" />
+                            <TextBlock>Liga F</TextBlock>
+                        </StackPanel>
+                    </ComboBoxItem>
+                </ComboBox>
+            </Grid>
+        </Grid>
     </Grid>
 </Window>
