@@ -1,0 +1,14 @@
+﻿<Window x:Class="GestionEmpleados2023.ListaEmpleados"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionEmpleados2023"
+        mc:Ignorable="d"
+        Title="ListaEmpleados" Height="450" Width="800">
+    <Grid>
+        <Label FontSize="35" HorizontalAlignment="Center" Margin="228,0,216,367" Width="348">Listado de Empleados</Label>
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="True" ItemsSource="{Binding}" Margin="28,115,34,76"/>
+        <Button Content="Eliminar Registro" Click="EliminarRegistro_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10"/>
+    </Grid>
+</Window>
